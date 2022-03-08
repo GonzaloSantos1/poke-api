@@ -21,6 +21,7 @@ function printCard(pokemonData) {
   let card = document.createElement('div');
   card.className = 'card';
   let pokemonImg = document.createElement('img');
+  pokemonImg.className = 'sprite';
   pokemonImg.src = pokemonData.sprites.front_default;
   let pokemonId = document.createElement('p');
   pokemonId.innerText = '#' + pokemonData.id;
@@ -34,11 +35,59 @@ function printCard(pokemonData) {
   container.appendChild(card);
 }
 
-//Creamos una función que recorra los tipos y nos cree un li por cada tipo
+//Creamos una función que recorra los tipos y nos cree un img por cada tipo, a su vez incluimos el icono
 function getTypes(types, ul) {
   types.forEach(function (type) {
-    let typeLi = document.createElement('li');
-    typeLi.innerText = type['type']['name'];
+    let typeLi = document.createElement('img');
+    if (type['type']['name'] == 'bug') {
+      typeLi.src = './assets/type_icons/bug.png';
+    } else if (type['type']['name'] == 'dark') {
+      typeLi.src = './assets/type_icons/dark.png';
+    } else if (type['type']['name'] == 'dragon') {
+      typeLi.src = './assets/type_icons/dragon.png';
+    } else if (type['type']['name'] == 'electric') {
+      typeLi.src = './assets/type_icons/electric.png';
+    } else if (type['type']['name'] == 'fairy') {
+      typeLi.src = './assets/type_icons/fairy.png';
+    } else if (type['type']['name'] == 'fighting') {
+      typeLi.src = './assets/type_icons/fighting.png';
+    } else if (type['type']['name'] == 'fire') {
+      typeLi.src = './assets/type_icons/fire.png';
+    } else if (type['type']['name'] == 'flying') {
+      typeLi.src = './assets/type_icons/flying.png';
+    } else if (type['type']['name'] == 'ghost') {
+      typeLi.src = './assets/type_icons/ghost.png';
+    } else if (type['type']['name'] == 'grass') {
+      typeLi.src = './assets/type_icons/grass.png';
+    } else if (type['type']['name'] == 'ground') {
+      typeLi.src = './assets/type_icons/ground.png';
+    } else if (type['type']['name'] == 'ice') {
+      typeLi.src = './assets/type_icons/ice.png';
+    } else if (type['type']['name'] == 'normal') {
+      typeLi.src = './assets/type_icons/normal.png';
+    } else if (type['type']['name'] == 'poison') {
+      typeLi.src = './assets/type_icons/poison.png';
+    } else if (type['type']['name'] == 'psychic') {
+      typeLi.src = './assets/type_icons/psychic.png';
+    } else if (type['type']['name'] == 'rock') {
+      typeLi.src = './assets/type_icons/rock.png';
+    } else if (type['type']['name'] == 'steel') {
+      typeLi.src = './assets/type_icons/steel.png';
+    } else if (type['type']['name'] == 'water') {
+      typeLi.src = './assets/type_icons/water.png';
+    }
+
     ul.appendChild(typeLi);
   });
 }
+
+/* function getTypes(types, ul) {
+    types.forEach(function (type) {
+      let typeLi = document.createElement('img');
+        typeLi.innerText = type['type']['name'];
+        ul.appendChild(typeLi);
+      
+    });
+  } */
+
+// Función iconos tipos

@@ -24,7 +24,7 @@ body {
 }
 
 form {
-  color: #555;
+  color: #bbb;
   display: flex;
   padding: 2px;
   border: 1px solid #bbb;
@@ -86,38 +86,55 @@ input:focus {
   flex-wrap: wrap;
   align-content: center;
   align-items: center;
-  margin: 3vh;
+  margin: 4vh;
   min-width: 17vh;
+  justify-content: center;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
   background-color: #3c5aa6;
-  border: 4px solid #ffcb05;
-  padding: 0 25px 25px 25px;
-  border-radius: 10px;
-  box-shadow: 2px 2px 2px black;
+  border: 10px solid #ffcb05;
+  padding: 0 25px 15px 25px;
+  box-shadow: 7px 7px 5px black;
 }
 
 ul {
-  margin-top: 5px;
   padding: 0;
-}
-
-li {
-  list-style: none;
-  background-color: #3c5aa6;
-  color: white;
-  text-transform: capitalize;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
 }
 
 h3 {
   color: #ffcb05;
-  background-color: #3c5aa6;
   text-transform: capitalize;
-  margin-top: 5px;
-  text-shadow: 2px 1px black;
+  padding-top: 10px;
+  width: 100%;
+  text-align: center;
+  height: 25px;
+  letter-spacing: 0.05em;
+  font-size: 20px;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.692), 1px -1px 0 rgba(0, 0, 0, 0.692),
+    -1px 1px 0 rgba(0, 0, 0, 0.692), 1px 1px 0 rgba(0, 0, 0, 0.692);
 }
 
 .card img,
 p {
   background-color: #3c5aa6;
   font-weight: 600;
-  color: white;
+  color: rgb(233, 232, 232);
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.692), 1px -1px 0 rgba(0, 0, 0, 0.692),
+    -1px 1px 0 rgba(0, 0, 0, 0.692), 1px 1px 0 rgba(0, 0, 0, 0.692);
+}
+
+.sprite {
+  width: 200px;
+}
+
+ul img {
+  width: 32px;
+  padding: 0 10px;
+  padding-top: 10px;
 }
