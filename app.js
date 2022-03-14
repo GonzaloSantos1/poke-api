@@ -80,14 +80,3 @@ function getTypes(types, ul) {
     ul.appendChild(typeLi);
   });
 }
-
-/* function getTypes(types, ul) {
-    types.forEach(function (type) {
-      let typeLi = document.createElement('img');
-        typeLi.innerText = type['type']['name'];
-        ul.appendChild(typeLi);
-      
-    });
-  } */
-
-// Función iconos tipos
